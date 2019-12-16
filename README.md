@@ -22,8 +22,8 @@ This repository provides a Python implementation of the CVPR 2017 Paper - Synthe
 ## Usage
 ### 1. Cloning the repository
 ```
-git clone https://github.com/nabeel3133/3D-texture-fitting.git
-cd 3D-texture-fitting
+https://github.com/Noor187/Human-Face-Texture-Fitting.git
+cd Human-Face-Texture-Fitting
 ```
 ### 2. Downloading the model
 - [BFM09: Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
