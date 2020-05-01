@@ -5,8 +5,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/nabeel3133/3D-texture-fitting?style=plastic)
 
 <p align="center"> 
-<img style="display:inline;" src="/images/test_input.gif">
-<img style="display:inline;" src="/images/test_output.gif">
+<img style="display:inline;" src="/images/Input.gif">
+<img style="display:inline;" src="/images/Output.gif">
 </p>
 
 This repository provides a Python implementation of the CVPR 2017 Paper - Synthesizing Normalized Faces From Facial Identity Features (Additional Results B.3 Implementation Only). Only Fitting Texture part is implemented which is mentioned in Additional Results Section B.3 of the paper.
