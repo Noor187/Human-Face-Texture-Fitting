@@ -36,7 +36,10 @@ python Masking.py -o ./Inputs/your_input_name
 
 The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
 
-Output file (.obj) will be saved in `Human-Face-Texture-Fitting/Output` folder with the name `Masked_your_input_name.obj` which can be rendered by Meshlab or Microsoft 3D Builder.
+The code will write three mesh files. 
+`your_input_name_BFMTexture.obj` is the output file with the fixed texture.
+`your_input_name_FinalOutput.obj` is the actual output file that is the resultant of texture fitting.
+`ConfidenceMask.obj` is the visualization of the confidence weights that are used for interpolation of DDFA texture and the predicted texture using Eigean space. 
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
