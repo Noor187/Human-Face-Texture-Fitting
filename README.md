@@ -34,8 +34,9 @@ Run the `Masking.py` with obj output from ddfa as input
 python Masking.py -o ./Inputs/your_input_name
 ```
 
-The input to this code is the output of the 
-Two output files (obj and ply) will be saved in `Human-Face-Texture-Fitting/Output` folder with the name `Masked_your_input_name.obj` and `Masked_your_input_name.ply` which can be redered by Meshlab or Microsoft 3D Builder.
+The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
+
+Output file (.obj) will be saved in `Human-Face-Texture-Fitting/Output` folder with the name `Masked_your_input_name.obj` which can be rendered by Meshlab or Microsoft 3D Builder.
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
