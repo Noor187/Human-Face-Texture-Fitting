@@ -18,7 +18,7 @@ This repository provides a Python implementation of the CVPR 2017 Paper - Synthe
 * [Python >= 3.5](https://www.python.org/downloads/release/python-352/)
   - Numpy-> ```pip install numpy```
   - Scipy -> ```pip install scipy```
-  - Math->```pip install math```
+  - Math->```pip install maths```
   
 ## Usage
 ### 1. Cloning the repository
@@ -33,7 +33,7 @@ Run the `Masking.py` with obj output from ddfa as input
 python Masking.py -o ./Inputs/your_input_name
 ```
 
-
+The input to this code is the output of the 
 Two output files (obj and ply) will be saved in `Human-Face-Texture-Fitting/Output` folder with the name `Masked_your_input_name.obj` and `Masked_your_input_name.ply` which can be redered by Meshlab or Microsoft 3D Builder.
 
 ## Citation
