@@ -5,6 +5,13 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/nabeel3133/3D-texture-fitting?style=plastic)
 
 <p align="center"> 
+<img style="display:inline;" width="200" height="250"; src="/images/Input.png">
+<img style="display:inline;" width="200" height="250"; src="/images/BFMPredicted.png">
+<img style="display:inline;" width="200" height="250"; src="/images/WeightMask.png">
+<img style="display:inline;" width="200" height="250"; src="/images/Output.png">
+</p>
+
+<p align="center"> 
 <img style="display:inline;" width="250" height="300"; src="/images/Input.gif">
 <img style="display:inline;" width="250" height="300"; src="/images/Input.gif">
 <img style="display:inline;" width="250" height="300"; src="/images/Output.gif">
@@ -43,7 +50,12 @@ The code will write three mesh files in the same directory as the input file.
 3. `your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
 
 
-### 2. Test run
+### 2. Downloading the model
+- Download the BFM eigeanspace from [BFM09: Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
+  - After you have acquired BFM, extract the BaselFaceModel.tgz and go to`PublicMM1` folder, copy `01_MorphableModel.mat`, `BFM_exp_idx.mat` and paste it in `Configs` folder.
+  
+
+### 3. Test run
 ```
 python Masking.py -i Meshes/Test1.obj
 ```
