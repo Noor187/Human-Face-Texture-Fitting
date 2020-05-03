@@ -6,8 +6,8 @@
 
 | INPUT TEXTURE | CONFIDENCE MASK | BFM PREDICTED TEXTURE | FINAL OUTPUT |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](/images/Input.PNG) | ![](/images/WeightMask.PNG) ![](/images/BFMpredicted.PNG) | ![](/images/Output.PNG) 
-![](/images/Input2.PNG) | ![](/images/WeightMask2.PNG) ![](/images/BFMpredicted2.PNG) | ![](/images/Output2.PNG) 
+![](/images/Input.PNG) | ![](/images/WeightMask.PNG) | ![](/images/BFMpredicted.PNG) | ![](/images/Output.PNG) 
+![](/images/Input2.PNG) | ![](/images/WeightMask2.PNG) | ![](/images/BFMpredicted2.PNG) | ![](/images/Output2.PNG) 
 
 
 This repository provides a Python implementation of the CVPR 2017 Paper - Synthesizing Normalized Faces From Facial Identity Features. Code covers only the Fitting Texture part that is mentioned in Additional Results Section B.3 of the paper.
