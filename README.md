@@ -36,11 +36,11 @@ python Masking.py -i your_input_name.obj
 
 The code will write three mesh files in the same directory as the input file. 
 
-  ##### 1. `ConfidenceMask.obj` is the visualization of the confidence weights per vertex. These weights are used for interpolation of DDFA texture (Input texture) and the predicted texture `your_input_name_BFMTexture.obj`. 
+1. `ConfidenceMask.obj` is the visualization of the confidence weights per vertex. These weights are used for interpolation of DDFA texture (Input texture) and the predicted texture `your_input_name_BFMTexture.obj`. 
 
-  ##### 2. `your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
+2. `your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
 
-  ##### 3. `your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
+3. `your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
 
 
 ### 2. Test run
