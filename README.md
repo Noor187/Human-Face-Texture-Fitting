@@ -1,8 +1,5 @@
 # Synthesizing Normalized Faces From Facial Identity Features (Additional Results B.3 Section Implementation Only)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![GitHub issues](https://img.shields.io/github/issues/nabeel3133/3D-texture-fitting.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/nabeel3133/3D-texture-fitting?style=plastic)
 
 | INPUT TEXTURE | CONFIDENCE MASK | BFM PREDICTED TEXTURE | FINAL OUTPUT |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
