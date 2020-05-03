@@ -37,9 +37,13 @@ python Masking.py -o ./Inputs/your_input_name
 The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
 
 The code will write three mesh files. 
-`your_input_name_BFMTexture.obj` is the output file with the fixed texture.
-`your_input_name_FinalOutput.obj` is the actual output file that is the resultant of texture fitting.
-`ConfidenceMask.obj` is the visualization of the confidence weights that are used for interpolation of DDFA texture and the predicted texture using Eigean space. 
+
+`ConfidenceMask.obj` is the visualization of the confidence weights per vertex. These weights are used for interpolation of DDFA texture (Input texture) and the predicted texture `your_input_name_BFMTexture.obj`. 
+
+`your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
+
+`your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
+
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
