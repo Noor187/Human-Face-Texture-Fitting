@@ -28,22 +28,29 @@ https://github.com/Noor187/Human-Face-Texture-Fitting.git
 cd Human-Face-Texture-Fitting
 ```
   
-### 2. Test run
+### 2. Run using command prompt
 Run the `Masking.py` with obj output from ddfa as input
 ```
-python Masking.py -o ./Inputs/your_input_name
+python Masking.py -i your_input_name.obj
 ```
 
 The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
 
-The code will write three mesh files. 
+The code will write three mesh files in the same directory as the input file. 
 
-`ConfidenceMask.obj` is the visualization of the confidence weights per vertex. These weights are used for interpolation of DDFA texture (Input texture) and the predicted texture `your_input_name_BFMTexture.obj`. 
+  ##### 1. `ConfidenceMask.obj` is the visualization of the confidence weights per vertex. These weights are used for interpolation of DDFA texture (Input texture) and the predicted texture `your_input_name_BFMTexture.obj`. 
 
-`your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
+  ##### 2. `your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
 
-`your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
+  ##### 3. `your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
 
+
+### 2. Test run
+Run the `Masking.py` with obj output from ddfa as input
+```
+python Masking.py -i Meshes/Test1.obj
+```
+It will write three files Test1_FinalOutput.obj, Test1_BFMTexture.obj and ConfidenceMask.obj in the Meshes folder.
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
