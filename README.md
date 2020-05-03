@@ -24,17 +24,15 @@ This repository provides a Python implementation of the CVPR 2017 Paper - Synthe
 ## Usage
 ### 1. Cloning the repository
 ```
-https://github.com/Noor187/Human-Face-Texture-Fitting.git
+git clone https://github.com/Noor187/Human-Face-Texture-Fitting.git
 cd Human-Face-Texture-Fitting
 ```
   
 ### 2. Run using command prompt
-Run the `Masking.py` with obj output from ddfa as input
+Run the `Masking.py` using command prompt from the `Human-Face-Texture-Fitting` directory. The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
 ```
 python Masking.py -i your_input_name.obj
 ```
-
-The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
 
 The code will write three mesh files in the same directory as the input file. 
 
@@ -46,11 +44,11 @@ The code will write three mesh files in the same directory as the input file.
 
 
 ### 2. Test run
-Run the `Masking.py` with obj output from ddfa as input
 ```
 python Masking.py -i Meshes/Test1.obj
 ```
 It will write three files Test1_FinalOutput.obj, Test1_BFMTexture.obj and ConfidenceMask.obj in the Meshes folder.
+
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
