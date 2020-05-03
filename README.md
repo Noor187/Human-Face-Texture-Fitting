@@ -20,6 +20,8 @@ This repository provides a Python implementation of the CVPR 2017 Paper - Synthe
   - Numpy-> ```pip install numpy```
   - Scipy -> ```pip install scipy```
   - Math->```pip install maths```
+  - Get [BFM model](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
+    After downloading the BaselFaceModel.tgz for this site, extract it. Copy the `01_MorphableModel.mat` and `BFM_exp_idx.mat` mat files from it to the `Configs` folder of this project.
   
 ## Usage
 ### 1. Cloning the repository
@@ -27,6 +29,7 @@ This repository provides a Python implementation of the CVPR 2017 Paper - Synthe
 git clone https://github.com/Noor187/Human-Face-Texture-Fitting.git
 cd Human-Face-Texture-Fitting
 ```
+
   
 ### 2. Run using command prompt
 Run the `Masking.py` using command prompt from the `Human-Face-Texture-Fitting` directory. The input to this code is the output of the DDFA model. The input file is to be in .obj file format.
@@ -41,11 +44,6 @@ The code will write three mesh files in the same directory as the input file.
 2. `your_input_name_BFMTexture.obj` is the texture from the BFM eigeanspace that is predicted during the code based on the Input texture.
 
 3. `your_input_name_FinalOutput.obj` is the actual output file of texture fitting i.e. B3 section of the paper. It is obtained by interpolating the Input texture and BFM predicted texture using the confidence weights per vertex.
-
-
-### 2. Downloading the model
-- Download the BFM eigeanspace from [BFM09: Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
-  - After you have acquired BFM, extract the BaselFaceModel.tgz and go to`PublicMM1` folder, copy `01_MorphableModel.mat`, `BFM_exp_idx.mat` and paste it in `Configs` folder.
   
 
 ### 3. Test run
